@@ -5,9 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="calculator.css">
-</head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
 <body>
-      <div class="themeContainer"></div>
+
+<div class="themeContainer">
+  <ul id="themes">
+    <li><i class='bx  bxs-palette' id="palette"></i> </li>
+    <li class="theme" id="pink"></li>
+    <li class="theme"id="yellow"></li>
+    <li class="theme"id="green"></li>
+    <li class="theme"id="red"></li>
+    <li class="theme"id="blue"></li>
+    <li class="theme"id="purple"></li>
+  </ul>
+</div>
       <div class="calculatorContainer pinkContainer">
         <input class="screen" readonly value="341">
         <div class="buttons pinkButtons">
@@ -17,8 +29,8 @@
             <button class="function pink">ANS</button>
           </div>
           <div class="rowOne">
-            <button class="button pink">AC</button>
-            <button class="button pink">CE</button>
+            <button class="button pink acpink">AC</button>
+            <button class="button pink cepink">CE</button>
             <button class="button pink">(</button>
             <button class="button pink">)</button>
             <button class="button pink">%</button>
@@ -52,7 +64,7 @@
         </div>     
       </div>      
 
-
     <script src="calculator.js"></script>
+    <script src="theme.js"></script>
 </body>
 </html>

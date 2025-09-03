@@ -6,8 +6,12 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #f7dde9;
+}
+
 :root{
-    --pinkcontainer: #ddb8ca;
+    --pinkcontainer: #e9dbe2;
     --pinkinside: #cb88a6;
     --pinkshadow: #a34461;
     --pinkac: #761619;
@@ -119,9 +123,87 @@
 /* THEME START THEME START THEME START THEME START THEME START THEME START  */
 /* THEME START THEME START THEME START THEME START THEME START THEME START  */
 
+.themeContainer{
+    background-color: rgba(0, 0, 0, 0.747);
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    margin: 10px 0 0 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 1s;
+    overflow: hidden;
+}
+
+#palette{
+    font-size: 45px;
+    color: rgba(255, 115, 115, 0.952);
+    transition: 1s;
+}
+
+.theme{
+    display: none;
+}
+
+#themes{
+    list-style: none;
+    transition: 1s;
+}
+
+#pink,#yellow,#green,#red,#blue,#purple{
+    border: 3px solid white;
+    margin-top: 7px;
+    list-style: none;
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+#pink{
+    background: #CB88A6;
+    background: linear-gradient(310deg,rgba(203, 136, 166, 1) 0%, rgba(163, 68, 97, 1) 100%);
+}
+
+#yellow{
+    background: #F3E5AB;
+    background: linear-gradient(310deg,rgba(243, 229, 171, 1) 0%, rgba(214, 181, 41, 1) 100%);    
+}
+
+#green{
+    background: #3E6B48;
+    background: linear-gradient(310deg,rgba(62, 107, 72, 1) 0%, rgba(45, 179, 152, 1) 100%);
+}
+
+#red{
+    background: #850000;
+    background: linear-gradient(310deg,rgba(133, 0, 0, 1) 0%, rgba(226, 125, 125, 1) 100%);
+}
+
+#blue{
+    background: #002b54;
+    background: linear-gradient(310deg,rgba(0, 43, 84, 1) 0%, rgba(163, 196, 224, 1) 100%);
+}
+
+#purple{
+   background: #8B5FBF;;
+    background: linear-gradient(310deg,rgba(0, 0, 0, 1) 0%, rgba(191, 161, 227, 1) 100%); 
+}
+
+
+/* PİNK PİNK PİNK PİNK PİNK PİNK PİNK PİNK PİNK PİNK PİNK PİNK PİNK PİNK  */
+/* PİNK PİNK PİNK PİNK PİNK PİNK PİNK PİNK PİNK PİNK PİNK PİNK PİNK PİNK  */
 
 .pinkContainer{
     background-color: var(--pinkcontainer);
+    border: 4px solid #a34461;
     box-shadow: inset 0px 0px 155px 12px #a34461,
                 inset 0px 0px 43px 5px #e97597;
 }
@@ -130,6 +212,7 @@
     background-color: var(--pinkinside);
     border: 4px solid #af4766;
     box-shadow: inset 0px 0px 0px 2px #ffffff85,
+                inset 20px 20px 25px 25px #4b1b292d,
                 inset 0px 0px 0px 5px #a54b66f8,
                 inset 0px 0px 125px 25px #b45a75;
 }
@@ -149,7 +232,7 @@
 
 .equalpink{
     background-color: var(--pinkequal);
-    border: 2px solid var(--pinkequalshadow);
+    border: 2px solid var(--pinkequal);
     box-shadow: 0px 6px 0px 0px var(--pinkequalshadow);
 }
 
@@ -158,3 +241,370 @@
     box-shadow: 0px 3px 0px 0px var(--pinkequalshadow);
     transition: 0.1s;
 }
+
+.acpink{
+    background-color: var(--pinkac);
+    color: white;
+    border: #761619;
+    box-shadow: 0px 6px 0px 0px #4b0c0e;
+}
+
+.acpink:active{
+    transform: translateY(5px) rotateX(20deg);
+    box-shadow: 0px 3px 0px 0px #4b0c0e;
+}
+
+.cepink{
+    background-color: var(--pinkce);
+    color: white;
+    border: #143b5d;
+    box-shadow: 0px 6px 0px 0px #091b2b;
+}
+
+.cepink:active{
+    transform: translateY(5px) rotateX(20deg);
+    box-shadow: 0px 3px 0px 0px #4b0c0e;
+}
+
+/* PİNK PİNK PİNK PİNK PİNK PİNK PİNK PİNK PİNK PİNK PİNK PİNK PİNK PİNK  */
+/* YELLOW YELLOW YELLOW YELLOW YELLOW YELLOW YELLOW YELLOW YELLOW YELLOW   */
+
+
+.yellowContainer{
+    background-color: var(--yellowcontainer);
+    border: 4px solid #706016;
+    box-shadow: inset 0px 0px 155px 12px#706016,
+                inset 0px 0px 43px 5px #e4d48f;
+}
+
+.yellowButtons{
+    background-color: var(--yellowinside);
+    border: 4px solid #0000002d;
+    box-shadow: inset 0px 0px 0px 2px #e4d48f,
+                inset 20px 20px 255px 25px #dbba2500,
+                inset 0px 0px 0px 5px #e6bc04,
+                inset 0px 0px 125px 25px #d9ff003d;
+}
+
+.yellow{
+    background-color: var(--yellowcontainer);
+    border: 2px solid black;
+    box-shadow: 0px 6px 0px 0px black;
+    transition: 0.1s;
+}
+
+.yellow:active{
+    transform: translateY(5px) rotateX(20deg);
+    box-shadow: 0px 3px 0px 0px black;
+    transition: 0.1s;
+}
+
+.equalyellow{
+    background-color: #606060;
+    border: 2px solid #606060;
+    box-shadow: 0px 6px 0px 0px black;
+}
+
+.equalyellow:active{
+    transform: translateY(5px) rotateX(20deg);
+    box-shadow: 0px 3px 0px 0px black;
+    transition: 0.1s;
+}
+
+.acyellow{
+    background-color: var(--yellowac);
+    color: white;
+    border: #3e6b48;
+    box-shadow: 0px 6px 0px 0px #1c3121;
+}
+
+.acyellow:active{
+    transform: translateY(5px) rotateX(20deg);
+    box-shadow: 0px 3px 0px 0px #4b0c0e;
+}
+
+.ceyellow{
+    background-color: var(--yellowce);
+    color: white;
+    border: #b15a29;
+    box-shadow: 0px 6px 0px 0px #4e2812;
+}
+
+.ceyellow:active{
+    transform: translateY(5px) rotateX(20deg);
+    box-shadow: 0px 3px 0px 0px #4b0c0e;
+}
+
+
+/* YELLOW YELLOW YELLOW YELLOW YELLOW YELLOW YELLOW YELLOW YELLOW YELLOW   */
+/* GREEN GREEN GREEN GREEN GREEN GREEN GREEN GREEN GREEN GREEN GREEN */
+
+.greenContainer{
+    background-color: var(--greencontainer);
+    border: 4px solid #1d312c;
+    box-shadow: inset 0px 0px 155px 12px #1d312c,
+                inset 0px 0px 43px 5px #03a726;
+}
+
+.greenButtons{
+    background-color: var(--greeninside);
+    border: 4px solid #1d312c;
+    box-shadow: inset 0px 0px 0px 2px #ffffff86,
+                inset 20px 20px 255px 25px #81f1d296,
+                inset 0px 0px 0px 5px #77b1a207,
+                inset 0px 0px 125px 25px #1d312c00;
+}
+
+.green{
+    background-color: var(--greencontainer);
+    border: 2px solid #192b1d;
+    box-shadow: 0px 6px 0px 0px #192b1d;
+    transition: 0.1s;
+}
+
+.green:active{
+    transform: translateY(5px) rotateX(20deg);
+    box-shadow: 0px 3px 0px 0px #1d312c00;
+    transition: 0.1s;
+}
+
+.equalgreen{
+    background-color: #9d3e3e;
+    border: 2px solid #9d3e3e;
+    box-shadow: 0px 6px 0px 0px #411a1a;
+}
+
+.equalgreen:active{
+    transform: translateY(5px) rotateX(20deg);
+    box-shadow: 0px 3px 0px 0px #411a1a;
+    transition: 0.1s;
+}
+
+.acgreen{
+    background-color: #7e6abf;
+    color: white;
+    border: #3e6b48;
+    box-shadow: 0px 6px 0px 0px #312a4b;
+}
+
+.acgreen:active{
+    transform: translateY(5px) rotateX(20deg);
+    box-shadow: 0px 3px 0px 0px #312a4b;
+}
+
+.cegreen{
+    background-color: #f1a66a;
+    color: white;
+    border: #b15a29;
+    box-shadow: 0px 6px 0px 0px #4e2812;
+}
+
+.cegreen:active{
+    transform: translateY(5px) rotateX(20deg);
+    box-shadow: 0px 3px 0px 0px #4b0c0e;
+}
+
+/* GREEN GREEN GREEN GREEN GREEN GREEN GREEN GREEN GREEN GREEN GREEN */
+/* RED RED RED RED RED RED RED RED RED RED RED RED RED RED RED RED */
+
+
+.redContainer{
+    background-color: var(--redcontainer);
+    border: 4px solid #643636;
+    box-shadow: inset 0px 0px 155px 12px #643636,
+                inset 0px 0px 43px 5px #942d2d;
+}
+
+.redButtons{
+    background-color: var(--redinside);
+    border: 4px solid #942d2d;
+    box-shadow: inset 0px 0px 0px 2px #fffffff5,
+                inset 20px 20px 255px 25px #e68484,
+                inset 0px 0px 0px 6px #810000,
+                inset 0px 0px 125px 25px #880000;
+}
+
+.red{
+    background-color: var(--redcontainer);
+    border: 2px solid #310f0f;
+    box-shadow: 0px 6px 0px 0px #310f0f;
+    transition: 0.1s;
+}
+
+.red:active{
+    transform: translateY(5px) rotateX(20deg);
+    box-shadow: 0px 3px 0px 0px #1d312c00;
+    transition: 0.1s;
+}
+
+.equalred{
+    background-color: var(--redequal);
+    border: 2px solid var(--redequal);
+    box-shadow: 0px 6px 0px 0px black;;
+}
+
+.equalred:active{
+    transform: translateY(5px) rotateX(20deg);
+    box-shadow: 0px 3px 0px 0px black;
+    transition: 0.1s;
+}
+
+.acred{
+    background-color: #f3e5ab;;
+    border: #f3e5ab;;
+    box-shadow: 0px 6px 0px 0px #5c5640;;
+}
+
+.acred:active{
+    transform: translateY(5px) rotateX(20deg);
+    box-shadow: 0px 3px 0px 0px #5c5640;
+}
+
+.cered{
+    background-color: #6d9dc5;
+    border: #6d9dc5;
+    box-shadow: 0px 6px 0px 0px #293c4b;
+}
+
+.cered:active{
+    transform: translateY(5px) rotateX(20deg);
+    box-shadow: 0px 3px 0px 0px #293c4b;
+}
+
+
+/* RED RED RED RED RED RED RED RED RED RED RED RED RED RED RED RED */
+/* BLUE BLUE BLUE BLUE BLUE BLUE BLUE BLUE BLUE BLUE BLUE BLUE BLUE */
+
+
+.blueContainer{
+    background-color: var(--bluecontainer);
+    border: 4px solid #1b3144;
+    box-shadow: inset 0px 0px 155px 12px #314e69,
+                inset 0px 0px 43px 5px #0c161f;
+}
+
+.blueButtons{
+    background-color: var(--blueinside);
+    border: 4px solid #1d3246;
+    box-shadow: inset 0px 0px 0px 2px #e6e6e686,
+                inset 20px 20px 255px 25px #365c7d,
+                inset 0px 0px 0px 5px #111f2b,
+                inset 0px 0px 125px 25px #111e29;
+}
+
+.blue{
+    background-color: var(--bluecontainer);
+    border: 2px solid #111e29;
+    box-shadow: 0px 6px 0px 0px #111e29;
+    transition: 0.1s;
+}
+
+.blue:active{
+    transform: translateY(5px) rotateX(20deg);
+    box-shadow: 0px 2px 0px 0px #111e29;
+    transition: 0.1s;
+}
+
+.equalblue{
+    background-color: var(--blueequal);
+    border: 2px solid var(--blueequal);
+    box-shadow: 0px 6px 0px 0px #214646;;
+}
+
+.equalblue:active{
+    transform: translateY(5px) rotateX(20deg);
+    box-shadow: 0px 3px 0px 0px black;
+    transition: 0.1s;
+}
+
+.acblue{
+    background-color: #d94f4f;
+    border: #d94f4f;
+    box-shadow: 0px 6px 0px 0px #4b1b1b;
+}
+
+.acblue:active{
+    transform: translateY(5px) rotateX(20deg);
+    box-shadow: 0px 3px 0px 0px #4b1b1b;
+}
+
+.ceblue{
+    background-color: #9b5de5;
+    border: #9b5de5;
+    box-shadow: 0px 6px 0px 0px #4a2d6d;
+}
+
+.ceblue:active{
+    transform: translateY(5px) rotateX(20deg);
+    box-shadow: 0px 3px 0px 0px #4a2d6d;
+}
+
+/* BLUE BLUE BLUE BLUE BLUE BLUE BLUE BLUE BLUE BLUE BLUE BLUE BLUE */
+/* PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE */
+
+.purpleContainer{
+    background-color: #422369;
+    border: 4px solid #9a64dd;
+    box-shadow: inset 0px 0px 155px 12px #422369,
+                inset 0px 0px 43px 5px #3e1370;
+}
+
+.purpleButtons{
+    background-color: var(--purpleinside);
+    border: 4px solid #2a1146;
+    box-shadow: inset 0px 0px 0px 2px #5d269c,
+                inset 20px 20px 255px 25px #7832c7,
+                inset 0px 0px 0px 5px #ffffff,
+                inset 0px 0px 125px 25px #8b5fbf;
+}
+
+.purple{
+    background-color: #cfa8fc;
+    border: 2px solid #341c4e;
+    box-shadow: 0px 6px 0px 0px #341c4e;
+    transition: 0.1s;
+}
+
+.purple:active{
+    transform: translateY(5px) rotateX(20deg);
+    box-shadow: 0px 3px 0px 0px #341c4e;
+    transition: 0.1s;
+}
+
+.equalpurple{
+    background-color: var(--purpleequal);
+    border: 2px solid #f3e5ab;;
+    box-shadow: 0px 6px 0px 0px #413d2d;
+}
+
+.equalpurple:active{
+    transform: translateY(5px) rotateX(20deg);
+    box-shadow: 0px 3px 0px 0px #413d2d;
+    transition: 0.1s;
+}
+.acpurple{
+    background-color: #365c7d;
+    color: white;
+    border: #365c7d;
+    box-shadow: 0px 6px 0px 0px #1a2d3d;
+}
+
+.acpurple:active{
+    transform: translateY(5px) rotateX(20deg);
+    box-shadow: 0px 3px 0px 0px #1a2d3d;
+}
+
+.cepurple{
+    background-color: #6ba292;
+    border: #6ba292;
+    color: white;
+    box-shadow: 0px 6px 0px 0px #233530;
+}
+
+.cepurple:active{
+    transform: translateY(5px) rotateX(20deg);
+    box-shadow: 0px 3px 0px 0px #4a2d6d;
+}
+
+/* PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE */
+/* PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE */
