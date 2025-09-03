@@ -131,12 +131,12 @@ themeContainer.addEventListener("click", () => {
         themeContainer.style.height = "60px";
         setTimeout(() => {
             palette.style.display = "block";
-        }, 1040);
+        }, 540);
         setTimeout(() => {
             palette.style.display = "block";
             theme.forEach(t => {
                 t.style.display = "none";});
-        }, 799);
+        }, 399);
         isOpen = false;
     }
 }) 
