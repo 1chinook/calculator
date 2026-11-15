@@ -8,7 +8,7 @@ let entries = [];
 let answer = 0;
 
 function evaluateExpression(expression) {
-    const tokens = expression.match(/\d*\.?\d+(?:e[+-]?\d+)?|sqrt|[()+\-*/^!%]/gi) || [];
+    const tokens = expression.match(/(?:\d+(?:\.\d*)?|\.\d+)(?:e[+-]?\d+)?|sqrt|[()+\-*/^!%]/gi) || [];
     if (tokens.join("") !== expression) throw new Error("Invalid expression");
     let index = 0;
 
