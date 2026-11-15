@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="calculator.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
@@ -21,11 +21,11 @@
   </ul>
 </div>
       <div class="calculatorContainer pinkContainer">
-        <input class="screen" readonly>
+        <input class="screen" aria-label="Calculator display" readonly>
         <div class="buttons pinkButtons">
           <div class="rowZero">
-            <button class="function pink">SCI</button>
-            <button class="function pink" id="Off">OFF</button>
+            <button class="function pink">−</button>
+            <button class="function pink" id="Off">ON</button>
             <button class="function pink">ANS</button>
           </div>
           <div class="rowOne">
@@ -60,9 +60,10 @@
             <button class="button pink">0</button>
             <button class="button pink">00</button>
             <button class="button pink">.</button>
-            <button class="equal equalpink">AC</button>
+            <button class="equal equalpink">=</button>
         </div>     
-      </div>      
+      </div>
+      </div>
 
     <script src="calculator.js"></script>
     <script src="theme.js"></script>
